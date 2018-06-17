@@ -3,7 +3,7 @@
 
         let form = document.getElementById('feedback');
         if (!form) return;
-//  Добавил свои паттерны на email,password,spam и добавил текс ошибок.
+//  Добавил свои паттерны на email,password,spam и добавил текс ошибок.Review_branch
         let elements = form.querySelectorAll('.form-control'),
             btn = document.getElementById('send_mess'),
             patternName = /^[а-яёА-ЯЁ\s]+$/,
