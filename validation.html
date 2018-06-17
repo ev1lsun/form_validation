@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Валидация формы обратной связи</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+<link href="validation.style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrap">
+	<h1>Валидация формы обратной связи</h1>
+	<form id="feedback" name="feedback" method="POST">
+		<ul class="form-list form-list_contact">
+			<li>
+				<label>Ваше имя:</label>
+				<div>
+					<input  class="form-control" type="text" name="username" maxlength="31" value="">
+				</div>
+				<span class="error"></span>
+			</li>
+			<li>
+				<label>Электронная почта:</label>
+				<div>
+					<input  class="form-control" type="text" name="usermail" maxlength="50" value="">
+				</div>
+				<span class="error"></span>
+			</li>
+			<li>
+				<label>Тема сообщения:</label>
+				<div>
+					<input class="form-control" type="text" name="subject" maxlength="50" value="">
+				</div>
+				<span class="error"></span>
+			</li>
+			<li>
+				<label>Пароль:</label>
+				<div>
+					<input class="form-control" type="password" name="password1" minlength="8" value="">
+				</div>
+				<span class="error"></span>
+			</li>
+			<li>
+				<label>Повторите пароль:</label>
+				<div>
+					<input class="form-control" type="password" name="password2" minlength="8" value="">
+				</div>
+				<span class="error"></span>
+			</li>
+			<li>
+				<label>Текст сообщения:</label>
+				<div>
+					<textarea class="form-control" name="textmess"></textarea>
+				</div>
+				<span class="error"></span>
+			</li>
+			<li>
+				<label></label>
+				<div>
+					<button id="send_mess" type="submit">отправить сообщение</button>
+				</div>
+			</li>
+		</ul>
+	</form>
+</div>
+
+<script src="validation.function.js"></script>
+</body>
+</html>
